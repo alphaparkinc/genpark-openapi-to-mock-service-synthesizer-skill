@@ -1,0 +1,39 @@
+{
+  "name": "genpark-openapi-to-mock-service-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - OpenAPI schema to in-memory MSW client-side mock service handler synthesizer enabling instant offline vibe coding prototyping.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "vibe-coding",
+  "tags": [
+    "openapi",
+    "msw",
+    "mock-service",
+    "miragejs",
+    "vibe-coding"
+  ],
+  "inputs": {
+    "openapi_spec_title": {
+      "type": "string"
+    },
+    "endpoints_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "mock_service_id": {
+      "type": "string"
+    },
+    "mock_handlers_generated": {
+      "type": "integer"
+    },
+    "msw_browser_worker_ready": {
+      "type": "boolean"
+    },
+    "offline_mock_bundle_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
